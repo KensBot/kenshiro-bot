@@ -4,7 +4,8 @@ const { Function, Scraper } = new (require('kens.js')), fs = require('fs'), chal
 global.owner = '628888375863'
 // Owner name
 global.name_owner = 'Kens Ransyah'
-global.pairingNumber = ''
+// Pairing Code Number
+global.pairingNumber = 62889017433717
 // Database name (Default: database)
 global.database = 'database'
 // Maximum upload file size limit for free users (Default : 100 MB)
@@ -23,12 +24,18 @@ global.max_reward = 500000
 // Time to be temporarily banned and others (Default : 30 minutes)
 global.timer = 1800000
 global.forwards = global.owner + '@c.us'
+// Symbols that are excluded when adding a prefix (Don't change it)
+global.evaluate_chars = ['=>', '~>', '<', '>', '$']
+// Country code that will be automatically blocked by the system, when sending messages in private chat
+global.blocks = ['91', '92', '94', '212', '1', '44']
 // Timezone (Default : Asia/Jakarta)
 global.timezone = 'Asia/Jakarta'
 // Bot name
 global.botname = `© kenshiro-bot v${require('../package.json').version}`
 // Footer text
 global.footer = 'ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴋᴇɴꜱʜɪʀᴏ ッ'
+// All scraper
+global.Api = KenshiroScraper
 // Function Scraper
 global.Scrape = Scraper
 // Function
@@ -229,4 +236,4 @@ fs.watchFile(file, () => {
   console.log(chalk.redBright("Update 'config.js'"))
   delete require.cache[file]
   require(file)
-})//
+})

@@ -18,7 +18,7 @@ function start(file) {
   isRunning = true
   let args = [path.join(__dirname, file), ...process.argv.slice(2)]
   cluster.setupMaster({
-    exec: path.join(__dirname, file),
+    exec: args[0],
     args: args.slice(1),
   })
   let p = cluster.fork()
