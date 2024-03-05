@@ -9,10 +9,10 @@ module.exports = (m) => {
       if (!('code' in user)) user.code = ''
       if (!isNumber(user.codeExpire)) user.codeExpire = 0
       if (!isNumber(user.attempt)) user.attempt = 0
-      if (!isNumber(user.age)) user.age = -1
-      if (!isNumber(user.regTime)) user.regTime = -1
-      if (!isNumber(user.eregTime)) user.eregTime = -1
-      if (!isNumber(user.afk)) user.afk = -1
+      if (!isNumber(user.age)) user.age = 0
+      if (!isNumber(user.regTime)) user.regTime = 0
+      if (!isNumber(user.eregTime)) user.eregTime = 0
+      if (!isNumber(user.afk)) user.afk = 0
       if (!('afkReason' in user)) user.afkReason = ''
       if (!('banned' in user)) user.banned = false
       if (!('premium' in user)) user.premium = false
@@ -42,9 +42,9 @@ module.exports = (m) => {
           banTemp: 0,
           attempt: 0,
           age: 0,
-          regTime: -1,
-          eregTime: -1,
-          afk: -1,
+          regTime: 0,
+          eregTime: 0,
+          afk: 0,
           afkReason: '',
           exp: 0,
           money: 0,

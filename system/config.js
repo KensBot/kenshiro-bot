@@ -41,22 +41,17 @@ global.Scrape = Scraper
 // Function
 global.Func = Function
 
-// Option
-global.setups = {
-  link: 'https://whatsapp.com/channel/0029VaEUFAB1iUxaJjoCut3x',
-  thumbnail: 'https://iili.io/JlJAxKg.jpg',
-  xfile: fs.readFileSync(`./media/file/xfile.pdf`),
-  // Watermark 
-  packname: '© kens-bot',
-  author: 'Kens Ransyah',
-  // your mail
-  fromail: 'gmail',
-  emailname: '',
-  email: 'kensbotz@gmail.com',
-  emailpass: '',
-  // Fake Size
-  fsizedoc: '99999999999999', // default 10TB
-  fpagedoc: '999'
+// Payment gateway
+global.noPay = {
+  // Payment gateway in Indonesian 
+  dana: '085817314691', // your number payment dana
+  ovo: '', // your number payment ovo
+  gopay: '085726319205', // your number payment gopay
+  // your mail to mail
+  fromail: 'gmail', // your name email contoh "gmail"
+  emailname: '', // your email name contoh "Nexon Assistent"
+  email: '', // your email contoh "example@gmail.com"
+  emailpass: '' // your password email
 }
 
 // Prosess
@@ -109,10 +104,6 @@ global.CAPIKeys = {
     'https://api.itsrose.life': 'Rk-Salsabila',
     'https://skizo.tech': 'Composing',
 }
-
-// Document
-global.docs = Func.random(['application/msword', 'application/vnd.ms-excel', 'application/vnd.ms-powerpoint', 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'])
-global.docs2 = 'application/vnd.android.package-archive'
 
 global.rpg = {
   emoticon(string) {
