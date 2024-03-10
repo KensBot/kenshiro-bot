@@ -146,7 +146,7 @@ module.exports = (m) => {
       if (!('onlyprefix' in settings)) settings.onlyprefix = '+'
       if (!'owners' in settings) settings.owners = ['628888375863', '6285726319205', '62889052331679']
       if (!isNumber(settings.lastReset)) settings.lastReset = new Date * 1
-      if (!('msg' in settings)) settings.msg = 'Hallo +tag +greeting 🪸\nI am an automatic system (WhatsApp Bot), which can help you to complete small jobs such as downloading videos or images etc. just via WhatsApp.\n\n> *Database* : +dbuser Users\n> *Uptime* : +runtime\n> *Library* : Baileys v+library\n> *Source* : https://github.com/KensBot/kenshiro-bot\n\nIf you find an error or want to upgrade premium plan or want rent bot contact the owner.\n\n'
+      if (!('msg' in settings)) settings.msg = 'Hallo +tag +greeting 🪸\nI am an automatic system (WhatsApp Bot), which can help you to complete small jobs such as downloading videos or images etc. just via WhatsApp.\n\n> *Database* : +dbuser Users\n> *Uptime* : +runtime\n> *Library* : Baileys v+library\n> *Source* : https://github.com/KensBot/kenshiro-bot\n\nIf you find an error or want to upgrade premium plan or want rent bot contact the owner.'
       if (!isNumber(settings.menuStyle)) settings.menuStyle = 4
       if (!'cover' in settings) settings.cover = 'https://iili.io/JlJAxKg.jpg'
       if (!'link' in settings) settings.link = 'https://whatsapp.com/channel/0029VaEUFAB1iUxaJjoCut3x'
@@ -166,7 +166,7 @@ module.exports = (m) => {
          onlyprefix: '+',
          owners: ['628888375863', '6285726319205', '62889052331679'],
          lastReset: new Date * 1,
-         msg: 'Hallo +tag +greeting 🪸\nI am an automatic system (WhatsApp Bot), which can help you to complete small jobs such as downloading videos or images etc. just via WhatsApp.\n\n> *Database* : +dbuser Users\n> *Uptime* : +runtime\n> *Library* : Baileys v+library\n> *Source* : https://github.com/KensBot/kenshiro-bot\n\nIf you find an error or want to upgrade premium plan or want rent bot contact the owner.\n\n',
+         msg: 'Hallo +tag +greeting 🪸\nI am an automatic system (WhatsApp Bot), which can help you to complete small jobs such as downloading videos or images etc. just via WhatsApp.\n\n> *Database* : +dbuser Users\n> *Uptime* : +runtime\n> *Library* : Baileys v+library\n> *Source* : https://github.com/KensBot/kenshiro-bot\n\nIf you find an error or want to upgrade premium plan or want rent bot contact the owner.',
          menuStyle: 4,
          cover: 'https://iili.io/JlJAxKg.jpg',
          link: 'https://whatsapp.com/channel/0029VaEUFAB1iUxaJjoCut3x'

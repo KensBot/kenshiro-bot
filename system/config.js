@@ -34,8 +34,6 @@ global.timezone = 'Asia/Jakarta'
 global.botname = `© kenshiro-bot v${require('../package.json').version}`
 // Footer text
 global.footer = 'ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴋᴇɴꜱʜɪʀᴏ ッ'
-// All scraper
-global.Api = KenshiroScraper
 // Function Scraper
 global.Scrape = Scraper
 // Function
