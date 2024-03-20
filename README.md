@@ -33,9 +33,20 @@
 
 ### Configuration
 
-There are 2 configuration files namely ```config.js```, adjust them before installing.
+There are 2 configuration files namely ```config.js``` **&&** ```pairing.json```, adjust them before installing.
 
 ```Javascript
+### pairing.json
+{
+   "pairing": {
+      "state": true,  // pairing code = true, qr code = false
+      "number": 62857263192050
+   }
+}
+```
+
+```Javascript
+### config.js
 // Owner
 global.owner = '628888375863'
 // Owner Name

@@ -144,9 +144,9 @@ module.exports = (m) => {
       if (!('prefix' in settings)) settings.prefix = ['.', '/', '!', '#']
       if (!('toxic' in settings)) settings.toxic = ["ajg", "ajig", "anjas", "anjg", "anjim", "anjing", "anjrot", "anying", "asw", "autis", "babi", "bacod", "bacot", "bagong", "bajingan", "bangsad", "bangsat", "bastard", "bego", "bgsd", "biadab", "biadap", "bitch", "bngst", "bodoh", "bokep", "cocote", "coli", "colmek", "comli", "dajjal", "dancok", "dongo", "fuck", "gelay", "goblog", "goblok", "guoblog", "guoblok", "hairul", "henceut", "idiot", "itil", "jamet", "jancok", "jembut", "jingan", "kafir", "kanjut", "kanyut", "keparat", "kntl", "kontol", "lana", "loli", "lont", "lonte", "mancing", "meki", "memek", "ngentod", "ngentot", "ngewe", "ngocok", "ngtd", "njeng", "njing", "njinx", "oppai", "pantek", "pantek", "peler", "pepek", "pilat", "pler", "pornhub", "pucek", "puki", "pukimak", "redhub", "sange", "setan", "silit", "telaso", "tempek", "tete", "titit", "toket", "tolol", "tomlol", "tytyd", "xnxx"]
       if (!('onlyprefix' in settings)) settings.onlyprefix = '+'
-      if (!'owners' in settings) settings.owners = ['628888375863', '6285726319205', '62889052331679']
+      if (!'owners' in settings) settings.owners = ['628888375863']
       if (!isNumber(settings.lastReset)) settings.lastReset = new Date * 1
-      if (!('msg' in settings)) settings.msg = 'Hallo +tag +greeting 🪸\nI am an automatic system (WhatsApp Bot), which can help you to complete small jobs such as downloading videos or images etc. just via WhatsApp.\n\n> *Database* : +dbuser Users\n> *Uptime* : +runtime\n> *Library* : Baileys v+library\n> *Source* : https://github.com/KensBot/kenshiro-bot\n\nIf you find an error or want to upgrade premium plan or want rent bot contact the owner.'
+      if (!('msg' in settings)) settings.msg = 'Hallo +tag +greeting 🪸\nI am an automatic system (WhatsApp Bot), which can help you to complete small jobs such as downloading videos or images etc. just via WhatsApp.\n\n> *Database* : +dbuser Users\n> *Uptime* : +runtime\n> *Library* : Baileys v+library\n> *Source* : https://github.com/KensBot/kenshiro-bot\n> *Information* : https://info.nexon.my.id\n\nIf you find an error or want to upgrade premium plan or want rent bot contact the owner.'
       if (!isNumber(settings.menuStyle)) settings.menuStyle = 4
       if (!'cover' in settings) settings.cover = 'https://iili.io/JlJAxKg.jpg'
       if (!'link' in settings) settings.link = 'https://whatsapp.com/channel/0029VaEUFAB1iUxaJjoCut3x'
@@ -164,9 +164,9 @@ module.exports = (m) => {
          prefix: ['.', '#', '!', '/'],
          toxic: ["ajg", "ajig", "anjas", "anjg", "anjim", "anjing", "anjrot", "anying", "asw", "autis", "babi", "bacod", "bacot", "bagong", "bajingan", "bangsad", "bangsat", "bastard", "bego", "bgsd", "biadab", "biadap", "bitch", "bngst", "bodoh", "bokep", "cocote", "coli", "colmek", "comli", "dajjal", "dancok", "dongo", "fuck", "gelay", "goblog", "goblok", "guoblog", "guoblok", "hairul", "henceut", "idiot", "itil", "jamet", "jancok", "jembut", "jingan", "kafir", "kanjut", "kanyut", "keparat", "kntl", "kontol", "lana", "loli", "lont", "lonte", "mancing", "meki", "memek", "ngentod", "ngentot", "ngewe", "ngocok", "ngtd", "njeng", "njing", "njinx", "oppai", "pantek", "pantek", "peler", "pepek", "pilat", "pler", "pornhub", "pucek", "puki", "pukimak", "redhub", "sange", "setan", "silit", "telaso", "tempek", "tete", "titit", "toket", "tolol", "tomlol", "tytyd", "xnxx"],
          onlyprefix: '+',
-         owners: ['628888375863', '6285726319205', '62889052331679'],
+         owners: ['628888375863'],
          lastReset: new Date * 1,
-         msg: 'Hallo +tag +greeting 🪸\nI am an automatic system (WhatsApp Bot), which can help you to complete small jobs such as downloading videos or images etc. just via WhatsApp.\n\n> *Database* : +dbuser Users\n> *Uptime* : +runtime\n> *Library* : Baileys v+library\n> *Source* : https://github.com/KensBot/kenshiro-bot\n\nIf you find an error or want to upgrade premium plan or want rent bot contact the owner.',
+         msg: 'Hallo +tag +greeting 🪸\nI am an automatic system (WhatsApp Bot), which can help you to complete small jobs such as downloading videos or images etc. just via WhatsApp.\n\n> *Database* : +dbuser Users\n> *Uptime* : +runtime\n> *Library* : Baileys v+library\n> *Source* : https://github.com/KensBot/kenshiro-bot\n> *Information* : https://info.nexon.my.id\n\nIf you find an error or want to upgrade premium plan or want rent bot contact the owner.',
          menuStyle: 4,
          cover: 'https://iili.io/JlJAxKg.jpg',
          link: 'https://whatsapp.com/channel/0029VaEUFAB1iUxaJjoCut3x'

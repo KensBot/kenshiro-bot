@@ -4,12 +4,8 @@ const { Function, Scraper } = new (require('kens.js')), fs = require('fs'), chal
 global.owner = '628888375863'
 // Owner name
 global.name_owner = 'Kens Ransyah'
-// Pairing Code Number
-global.pairingNumber = 62889017433717
 // Database name (Default: database)
 global.database = 'database'
-// Maximum upload file size limit for free users (Default : 100 MB)
-global.max_upload_free = 100
 // Makximum upload file size limit for premium user (Default : 250 MB)
 global.max_upload = 250
 // Delay for spamming protection (Default : 5 seconds)
