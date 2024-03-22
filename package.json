@@ -28,7 +28,7 @@
   "dependencies": {
     "@adiwajshing/baileys": "npm:@whiskeysockets/baileys",
     "@adiwajshing/keyed-db": "^0.2.4",
-    "kens.js": "^0.40.0",
+    "kens.js": "^0.43.0",
     "awesome-phonenumber": "^2.70.0",
     "axios": "^0.24.0",
     "cache-manager": "^5.2.4",
