@@ -1,10 +1,9 @@
-const fs = require('fs');
 let handler = async (m, {
   clips
 }) => {
       clips.sendContact(m.chat, [{
-         name: global.name_owner,
-         number: global.owner,
+         name: env.name_owner,
+         number: env.owner,
          about: 'Owner & Creator'
       }], m, {
          org: 'Kens Network',

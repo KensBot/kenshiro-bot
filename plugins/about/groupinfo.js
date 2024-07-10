@@ -27,7 +27,6 @@ let handler = async (m, {
             caption += `	◎  ${Func.switcher(setting.antivirtex, '[ √ ]', '[ × ]')} Anti Virtex\n`
             caption += `	◎  ${Func.switcher(setting.viewonce, '[ √ ]', '[ × ]')} Viewonce\n`
             caption += `	◎  ${Func.switcher(setting.filter, '[ √ ]', '[ × ]')} Filter\n`
-            caption += `	◎  ${Func.switcher(setting.game, '[ √ ]', '[ × ]')} Games\n`
             caption += `	◎  ${Func.switcher(setting.left, '[ √ ]', '[ × ]')} Left Message\n`
             caption += `	◎  ${Func.switcher(setting.localonly, '[ √ ]', '[ × ]')} Localonly\n`
             caption += `	◎  ${Func.switcher(setting.welcome, '[ √ ]', '[ × ]')} Welcome Message\n\n`

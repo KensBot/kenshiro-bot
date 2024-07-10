@@ -21,7 +21,7 @@ let handler = async (m, {
   } catch (e) {} finally {
     let target = global.db.data.users[user]
     if (typeof target == 'undefined') return clips.reply(m.chat, Func.texted('bold', `🚩 Can't find user data.`), m)
-    let { min, xp, max } = levelling.xpRange(target.level, global.multiplier)
+    let { min, xp, max } = levelling.xpRange(target.level, env.multiplier)
     let math = max - xp
     try {
       pic = await Func.fetchBuffer(await clips.profilePictureUrl(user, 'image'))
@@ -35,7 +35,7 @@ let handler = async (m, {
     caption += `	◎ *Limit* : ${Func.formatNumber(target.limit)}\n`
     caption += `	◎ *Warning* : ${((m.isGroup) ? (typeof groupSet.member[target] != 'undefined' ? groupSet.member[target].warning : 0) + ' / 5' : target.warning + ' / 5')}\n\n`
     caption += `⼷  *U S E R - S T A T U S*\n\n`
-    caption += `	◎ *Banned* : ${(new Date - target.banTemp < global.timer) ? Func.toTime(new Date(target.banTemp + global.timer) - new Date()) + ' (' + ((global.timer / 1000) / 60) + ' min)' : target.banned ? '√' : '×'}\n`
+    caption += `	◎ *Banned* : ${(new Date - target.banTemp < env.timer) ? Func.toTime(new Date(target.banTemp + env.timer) - new Date()) + ' (' + ((env.timer / 1000) / 60) + ' min)' : target.banned ? '√' : '×'}\n`
     caption += `	◎ *Age* : ${(target.age ? target.age : '-')}\n`
     caption += `	◎ *Taken* : ${(target.taken ? '√' : '×')}\n`
     caption += `	◎ *Loved* : ${target.taken ? '@' + target.partner.split`@`[0] : '-'}\n`

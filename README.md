@@ -33,40 +33,35 @@
 
 ### Configuration
 
-There are 2 configuration files namely ```config.js``` **&&** ```pairing.json```, adjust them before installing.
+There are 2 configuration files namely ```config.js``` **&&** ```env.json```, adjust them before installing.
 
 ```Javascript
-### pairing.json
+### env.json
 {
+   "owner": "628888375863",
+   "name_owner": "Kens Ransyah",
+   "database": "database",
+   "ram_usage": "900mb",
+   "max_upload_free": "100",
+   "max_upload": "250",
+   "limit": 25,
+   "cooldown": 3, // anti spam hold 3 seconds
+   "multiplier": 36,
+   "timer": 1800000,
+   "blocks": ["994", "91", "92"],
+   "evaluate_chars": ["=>", "~>", "<", ">", "$"],
    "pairing": {
-      "state": true,  // pairing code = true, qr code = false
-      "number": 62857263192050
+      "state": true, // "true" if you want to use the pairing code
+      "number": 62xxxx // start number with country code
+   },
+   "replit": {
+     "_url": ""
    }
 }
 ```
 
 ```Javascript
 ### config.js
-// Owner
-global.owner = '628888375863'
-// Owner Name
-global.name_owner = 'Kens Ransyah'
-// Number Pairing Code With Run Terminal 
-global.pairingNumber = 62889017433717
-// Database name (Default: database)
-global.database = 'database'
-// Maximum upload file size limit for free users (Default : 100 MB)
-global.max_upload_free = 100
-// Makximum upload file size limit for premium user (Default : 250 MB)
-global.max_upload = 250
-// Delay for spamming protection (Default : 5 seconds)
-global.cooldown = 5
-// User Limitation (Default : 25)
-global.limit = 25
-// Multiplier (the higher the multiplier the harder it is to level up)
-global.multiplier = 44
-// Time to be temporarily banned and others (Default : 30 minutes)
-global.timer = 1800000
 // Timezone (Default : Asia/Jakarta)
 global.timezone = 'Asia/Jakarta'
 // Bot name
@@ -77,40 +72,6 @@ global.footer = 'ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴋᴇɴꜱ�
 global.Scrape = Scraper
 // Function
 global.Func = Function
-
-// Options
-global.setups = {
-  link: 'https://whatsapp.com/channel/0029VaEUFAB1iUxaJjoCut3x',
-  thumbnail: 'https://iili.io/JlJAxKg.jpg',
-  xfile: fs.readFileSync(`./media/file/xfile.pdf`),
-  packname: '© kens-bot',
-  author: 'Kens Ransyah',
-  fsizedoc: '99999999999999', // default 10TB
-  fpagedoc: '999'
-}
-
-// Process Text 
-global.status = {
-  wait: '*Sedang diproses. . .*',
-  invalid: '*URL tidak valid.*',
-  wrong: '*Format salah.*',
-  getdata: '*Scraping metadata . . .*',
-  fail: '*Can\'t get metadata!*',
-  error: '*Terjadi kesalahan.*',
-  errorF: '*Sorry this feature is in error.*',
-  premium: '*Fitur ini hanya untuk pengguna premium.*',
-  admin: '*Perintah ini khusus untuk Admin.*',
-  botAdmin: '*Jadikan bot admin untuk menggunakan perintah ini.*',
-  owner: '*Perintah ini hanya untuk Owner.*',
-  mod: '*Perintah ini hanya untuk Moderator.*',
-  group: '*Perintah ini khusus Grup.*',
-  private: '*Perintah ini khusus chat pribadi.*',
-  register: '*Silahkan daftar terlebih dahulu untuk menggunakan perintah ini.*',
-  nsfw: '*Fitur nsfw belum diaktifkan.*',
-  game: '*Fitur game belum diaktifkan.*',
-  rpg: '*Fitur RPG belum diaktifkan.*',
-  gameLevel: '*You cannot play the game because your level has reached the maximum limit.*'
-}
 
 global.CAPIs = {
   alya: 'https://api.nexon.my.id'
@@ -128,9 +89,6 @@ Make sure the configuration and server meet the requirements so that there are n
 ```
 $ npm i or npm install
 $ node . or npm start
-
-**Run Pairing Code in the terminal**
-$ node . --pairing-code 
 ```
 
 or want to use pm2
